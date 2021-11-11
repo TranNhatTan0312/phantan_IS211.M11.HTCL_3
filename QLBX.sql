@@ -111,3 +111,15 @@ insert into khachhang values("KH27","Lê Ngân Hà","0903575717","nganha@gmail.c
 insert into khachhang values("KH28","Huỳnh Văn Hoàng","0908356264","hoanghuynh@gmail.com","F24 Nhật Tảo, Phường 7, Quận 11,","TP HCM")
 insert into khachhang values("KH29","Trần Thị Liên Hương","0982166950","lienhuong@gmail.com","23 Nguyễn Hữu Tiến, Phường Tây Thạnh, Quận Tân Phú","TP HCM")
 insert into khachhang values("KH30","Nguyễn Thị Minh Thi","0913284310","minhthi@gmail.com","41 Trại Tóc - Ô Chợ Dừa, Đống Đa","Hà Nội")
+
+
+INSERT INTO chinhanh VALUES ('CN01','Quan 3, TPHCM','0939013913'); 
+INSERT INTO chinhanh VALUES ('CN02','Quan Hoang Kiem, Ha Noi',' 090712475'); 
+INSERT INTO chinhanh VALUES ('CN03','Quan Binh Thanh, TPHCM','0939456713'); 
+INSERT INTO chinhanh VALUES ('CN04','Quan 8, TPHCM',' 0942135815'); 
+INSERT INTO chinhanh VALUES ('CN05','Quan 10, TPHCM','0862424427'); 
+INSERT INTO chinhanh VALUES ('CN06','Cau Giay, Ha Noi',' 0981916244'); 
+INSERT INTO chinhanh VALUES ('CN07','Phuong 9, TP Ca Mau','0937393641'); 
+INSERT INTO chinhanh VALUES ('CN08','Phuong 5, TP Ca Mau',' 0845361684'); 
+INSERT INTO chinhanh VALUES ('CN09','Quan 7, TPHCM','0907152741'); 
+INSERT INTO chinhanh VALUES ('CN010','Quan 5, Ha Noi',' 0904221453'); 
