@@ -84,36 +84,35 @@ GiaTien int,
 constraint fk_cthd_hd foreign key(MaHD)
 references HoaDon(MaHD),
 );
-insert into khachhang values("KH01","Lê Văn Thông","01649077967","thongle@gmail.com","B3-202 An Hòa 7, Nam Long, Phường Tân Thuận Đông, Quận 7","TP HCM")
-insert into khachhang values("KH02","Trác Huệ Minh","0903851128","minhhue@gmail.com","233/17 Nguyễn Trãi, Quận 1","TP HCM")
-insert into khachhang values("KH03","Nguyễn Đức Tiến","0903814022","minhhue@gmail.com","3E/27 Phổ Quang, Phường 2, Quận Tân Bình","TP HCM")
-insert into khachhang values("KH04","Daniel Alves","0903143688","dan_alv@gmail.com","6H Phan Kế Bính, Phường ĐaKao, Quận 1","TP HCM")
-insert into khachhang values("KH05","Nguyễn Đoàn Nguyệt Hằng","0912335868","hangnguyen@gmail.com","Cty TNHH Dp Việt Pháp, 60 Thổ Quan, Khâm Thiên, Đống Đa","Hà Nội")
-insert into khachhang values("KH06","Triệu Thị Hương Giang","0903771522","hg_giang_mil@gmail.com","A1.28 Saigon Pearl Villas, 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh","TP HCM")
-insert into khachhang values("KH07","Phạm Hạnh","0908022866","phamhanh@gmail.com","601 Nhật Tảo, Phường 7, Quận 11","TP HCM")
-insert into khachhang values("KH08","Đỗ Thị Thu Thủy","0904221030","dothuy@gmail.com","Số 9, ngõ 156/38 phố Hồng Mai, Quận Hai Bà Trưng","Hà Nội")
-insert into khachhang values("KH09","Nguyễn Văn Thăng","0913888339","thangnv@gmail.com","Linh Hotel, 16 Mac Thi Buoi, Quận 1","TP HCM")
-insert into khachhang values("KH11","Kim Hee Chan","0902308068","kimkr@gmail.com","Panorama 12B, 528 A7, Phú Mỹ Hưng, Quận 7","TP HCM")
-insert into khachhang values("KH12","Luong Phuoc Hong","037562381","hongluong@gmail.com","016 Lô C Chung cư Nguyễn Thiện Thuật, Phường 1, Quận 3","TP HCM")
-insert into khachhang values("KH13","Nguyễn Hữu Đặng","082789531","huudang@gmail.com","249/21B Bến Phú Lâm, Phường 9, Quận 6","TP HCM")
-insert into khachhang values("KH14","Doãn Thùy Dung","0883535311","dungtd@gmail.com","282Bis Cống Quỳnh, Phường Phạm Ngũ Lão, Quận 1","TP HCM")
-insert into khachhang values("KH15","Nguyễn Thị Hải","0907578422","nguyenthihai@gmail.com","222/10/5A/16 Ngô Tất Tố, Phường 22, Quận Bình Thạnh","TP HCM")
-insert into khachhang values("KH16","Đoàn Văn Trang","0357746182","trangdoan@gmail.com","69/1/3 Đường 17, Khu phố 3, Hiệp Bình Chánh, Quận Thủ Đức","TP HCM")
-insert into khachhang values("KH17","Võ Thị Bích Lan","0937846910","volan@gmail.com","P320 Tòa nhà Petro Vietnam, Số 8 Hoàng Diệu","Vũng Tàu")
-insert into khachhang values("KH18","Phan Trí Thịnh","0364985723","phanthinh@gmail.com","781/A23 Lê Hồng Phong, Phường 12, Quận 10","TP HCM")
-insert into khachhang values("KH19","Trần Quang Nghĩa","0905234123","nghiatran@gmail.com","127 Xô Viết Nghệ Tĩnh, Phường 17, Quận Bình Thạnh","TP HCM")
-insert into khachhang values("KH20","Phạm Hoàng Quỳnh Hoa","0370308068","hoapham@gmail.com","23C10 Hoa Hồng 2, Phường 2, Quận Phú Nhuận","TP HCM")
-insert into khachhang values("KH21","Phạm Hồng Minh","0933528248","phanminh@gmail.com","39/271 Phan Huy Ích, Phường 12, Tổ 36, Quận Gò Vấp","TP HCM")
-insert into khachhang values("KH22","Trần Thị Kim Cúc","0902343430","cuctran@gmail.com","100 Phố Linh Lang,Quận Ba Đình","Hà Nội")
-insert into khachhang values("KH23","Phạm Quốc Trung","0958168168","phamtrung@gmail.com","8F Lạc Long Quân, Phường 2","Vũng Tàu")
-insert into khachhang values("KH24","Phạm Thị Châu Giang","0903397364","giangchau@gmail.com","7-9-11 Trần Xuân Hòa, Phường 7, Quận 5","TP HCM")
-insert into khachhang values("KH25","Metharam Murli","0913266100","murli@gmail.com","76/1 Tôn Thất Đạm, Phường Bến Nghé, Quận 1","TP HCM")
-insert into khachhang values("KH26","Trần Thị Phúc Hương","0903003587","phuchuong@gmail.com","76/1 Tôn Thất Đạm, Phường Bến Nghé, Quận 1","TP HCM")
-insert into khachhang values("KH27","Lê Ngân Hà","0903575717","nganha@gmail.com","A801 Chung cư Hoàng Anh Gia Lai, 357 Lê Văn Lương, Quận 7","TP HCM")
-insert into khachhang values("KH28","Huỳnh Văn Hoàng","0908356264","hoanghuynh@gmail.com","F24 Nhật Tảo, Phường 7, Quận 11,","TP HCM")
-insert into khachhang values("KH29","Trần Thị Liên Hương","0982166950","lienhuong@gmail.com","23 Nguyễn Hữu Tiến, Phường Tây Thạnh, Quận Tân Phú","TP HCM")
-insert into khachhang values("KH30","Nguyễn Thị Minh Thi","0913284310","minhthi@gmail.com","41 Trại Tóc - Ô Chợ Dừa, Đống Đa","Hà Nội")
-
+insert into khachhang values(‘KH01’,’Lê Văn Thông’,’01649077967’,’thongle@gmail.com’,’B3-202 An Hòa 7, Nam Long, Phường Tân Thuận Đông, Quận 7’,’TP HCM’);
+insert into khachhang values(‘KH02’,’Trác Huệ Minh’,’0903851128’,’minhhue@gmail.com’,’233/17 Nguyễn Trãi, Quận 1’,’TP HCM’);
+insert into khachhang values(‘KH03’,’Nguyễn Đức Tiến’,’0903814022’,’minhhue@gmail.com’,’3E/27 Phổ Quang, Phường 2, Quận Tân Bình’,’TP HCM’);
+insert into khachhang values(‘KH04’,’Daniel Alves’,’0903143688’,’dan_alv@gmail.com’,’6H Phan Kế Bính, Phường ĐaKao, Quận 1’,’TP HCM’);
+insert into khachhang values(‘KH05’,’Nguyễn Đoàn Nguyệt Hằng’,’0912335868’,’hangnguyen@gmail.com’,’Cty TNHH Dp Việt Pháp, 60 Thổ Quan, Khâm Thiên, Đống Đa’,’Hà Nội’);
+insert into khachhang values(‘KH06’,’Triệu Thị Hương Giang’,’0903771522’,’hg_giang_mil@gmail.com’,’A1.28 Saigon Pearl Villas, 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh’,’TP HCM’);
+insert into khachhang values(‘KH07’,’Phạm Hạnh’,’0908022866’,’phamhanh@gmail.com’,’601 Nhật Tảo, Phường 7, Quận 11’,’TP HCM’);
+insert into khachhang values(‘KH08’,’Đỗ Thị Thu Thủy’,’0904221030’,’dothuy@gmail.com’,’Số 9, ngõ 156/38 phố Hồng Mai, Quận Hai Bà Trưng’,’Hà Nội’);
+insert into khachhang values(‘KH09’,’Nguyễn Văn Thăng’,’0913888339’,’thangnv@gmail.com’,’Linh Hotel, 16 Mac Thi Buoi, Quận 1’,’TP HCM’);
+insert into khachhang values(‘KH11’,’Kim Hee Chan’,’0902308068’,’kimkr@gmail.com’,’Panorama 12B, 528 A7, Phú Mỹ Hưng, Quận 7’,’TP HCM’);
+insert into khachhang values(‘KH12’,’Luong Phuoc Hong’,’037562381’,’hongluong@gmail.com’,’016 Lô C Chung cư Nguyễn Thiện Thuật, Phường 1, Quận 3’,’TP HCM’);
+insert into khachhang values(‘KH13’,’Nguyễn Hữu Đặng’,’082789531’,’huudang@gmail.com’,’249/21B Bến Phú Lâm, Phường 9, Quận 6’,’TP HCM’);
+insert into khachhang values(‘KH14’,’Doãn Thùy Dung’,’0883535311’,’dungtd@gmail.com’,’282Bis Cống Quỳnh, Phường Phạm Ngũ Lão, Quận 1’,’TP HCM’);
+insert into khachhang values(‘KH15’,’Nguyễn Thị Hải’,’0907578422’,’nguyenthihai@gmail.com’,’222/10/5A/16 Ngô Tất Tố, Phường 22, Quận Bình Thạnh’,’TP HCM’);
+insert into khachhang values(‘KH16’,’Đoàn Văn Trang’,’0357746182’,’trangdoan@gmail.com’,’69/1/3 Đường 17, Khu phố 3, Hiệp Bình Chánh, Quận Thủ Đức’,’TP HCM’);
+insert into khachhang values(‘KH17’,’Võ Thị Bích Lan’,’0937846910’,’volan@gmail.com’,’P320 Tòa nhà Petro Vietnam, Số 8 Hoàng Diệu’,’Vũng Tàu’);
+insert into khachhang values(‘KH18’,’Phan Trí Thịnh’,’0364985723’,’phanthinh@gmail.com’,’781/A23 Lê Hồng Phong, Phường 12, Quận 10’,’TP HCM’);
+insert into khachhang values(‘KH19’,’Trần Quang Nghĩa’,’0905234123’,’nghiatran@gmail.com’,’127 Xô Viết Nghệ Tĩnh, Phường 17, Quận Bình Thạnh’,’TP HCM’);
+insert into khachhang values(‘KH20’,’Phạm Hoàng Quỳnh Hoa’,’0370308068’,’hoapham@gmail.com’,’23C10 Hoa Hồng 2, Phường 2, Quận Phú Nhuận’,’TP HCM’);
+insert into khachhang values(‘KH21’,’Phạm Hồng Minh’,’0933528248’,’phanminh@gmail.com’,’39/271 Phan Huy Ích, Phường 12, Tổ 36, Quận Gò Vấp’,’TP HCM’);
+insert into khachhang values(‘KH22’,’Trần Thị Kim Cúc’,’0902343430’,’cuctran@gmail.com’,’100 Phố Linh Lang,Quận Ba Đình’,’Hà Nội’);
+insert into khachhang values(‘KH23’,’Phạm Quốc Trung’,’0958168168’,’phamtrung@gmail.com’,’8F Lạc Long Quân, Phường 2’,’Vũng Tàu’);
+insert into khachhang values(‘KH24’,’Phạm Thị Châu Giang’,’0903397364’,’giangchau@gmail.com’,’7-9-11 Trần Xuân Hòa, Phường 7, Quận 5’,’TP HCM’);
+insert into khachhang values(‘KH25’,’Metharam Murli’,’0913266100’,’murli@gmail.com’,’76/1 Tôn Thất Đạm, Phường Bến Nghé, Quận 1’,’TP HCM’);
+insert into khachhang values(‘KH26’,’Trần Thị Phúc Hương’,’0903003587’,’phuchuong@gmail.com’,’76/1 Tôn Thất Đạm, Phường Bến Nghé, Quận 1’,’TP HCM’);
+insert into khachhang values(‘KH27’,’Lê Ngân Hà’,’0903575717’,’nganha@gmail.com’,’A801 Chung cư Hoàng Anh Gia Lai, 357 Lê Văn Lương, Quận 7’,’TP HCM’);
+insert into khachhang values(‘KH28’,’Huỳnh Văn Hoàng’,’0908356264’,’hoanghuynh@gmail.com’,’F24 Nhật Tảo, Phường 7, Quận 11,’,’TP HCM’);
+insert into khachhang values(‘KH29’,’Trần Thị Liên Hương’,’0982166950’,’lienhuong@gmail.com’,’23 Nguyễn Hữu Tiến, Phường Tây Thạnh, Quận Tân Phú’,’TP HCM’);
+insert into khachhang values(‘KH30’,’Nguyễn Thị Minh Thi’,’0913284310’,’minhthi@gmail.com’,’41 Trại Tóc - Ô Chợ Dừa, Đống Đa’,’Hà Nội’);
 --Tan--
 INSERT INTO chinhanh VALUES ('CN01','Quan 3, TPHCM','0939013913'); 
 INSERT INTO chinhanh VALUES ('CN02','Quan Hoang Kiem, Ha Noi',' 090712475'); 
@@ -125,6 +124,7 @@ INSERT INTO chinhanh VALUES ('CN07','Phuong 9, TP Ca Mau','0937393641');
 INSERT INTO chinhanh VALUES ('CN08','Phuong 5, TP Ca Mau',' 0845361684'); 
 INSERT INTO chinhanh VALUES ('CN09','Quan 7, TPHCM','0907152741'); 
 INSERT INTO chinhanh VALUES ('CN10','Quan 5, Ha Noi',' 0904221453');
+
 INSERT INTO chinhanh VALUES ('CN11','Quận Mê Linh, Hà Nội','0937119702'); 
 INSERT INTO chinhanh VALUES ('CN12','Quận Đông Anh, Hà Nội',' 0353735762'); 
 INSERT INTO chinhanh VALUES ('CN13','Quận 2, TPHCM','0823712145'); 
@@ -142,4 +142,16 @@ INSERT INTO xe VALUES ('Xe03','Wave alpha 2021','Xe so', to_date('20/06/2021','d
 INSERT INTO xe VALUES ('Xe04','Sirius','Xe so', to_date('03/10/2021','dd/mm/yyyy'),'Yamaha' '110' , '22000000');
 INSERT INTO xe VALUES ('Xe05','Liked 50','Xe tay ga', to_date('19/05/2020','dd/mm/yyyy'),'Honda' '50' , '20000000');
 
+INSERT INTO xe VALUES ('XE11','SH Mode 125','Xe tay ga', to_date('29/01/2021','dd/mm/yyyy'),'Honda','125' , '55000000');
+INSERT INTO xe VALUES ('XE12','PCX','Xe tay ga', to_date('11/10/2019','dd/mm/yyyy'),'Honda','125' , '50000000');
+INSERT INTO xe VALUES ('XE13','Lead ','Xe tay ga', to_date('02/05/2019','dd/mm/yyyy'),'Honda' '125' , '40000000');
+INSERT INTO xe VALUES ('XE14','946 Armani',PKL', to_date('03/11/2018','dd/mm/yyyy'),'Vespa' '155' , '40500000');
+INSERT INTO xe VALUES ('XE15','Sirius FI','Xe số', to_date('12/06/2019','dd/mm/yyyy'),'Yamaha' '110' , '23000000');
+INSERT INTO xe VALUES ('XE16','Grande Deluxe 2016','Xe tay ga', to_date('20/01/2016','dd/mm/yyyy'),'Yamaha','125' , '40000000');
+INSERT INTO xe VALUES ('XE17','FZ 150i','Xe tay côn', to_date('03/10/2020','dd/mm/yyyy'),'Yamaha','150' , '66000000');
+INSERT INTO xe VALUES ('XE18','Axelo','Xe tay côn', to_date('02/08/2018','dd/mm/yyyy'),'Suzuki' '125' , '28000000');
+INSERT INTO xe VALUES ('XE19','Galaxy SR 115','Xe số', to_date('07/11/2020','dd/mm/yyyy'),'SYM' '115' , '20000000');
+INSERT INTO xe VALUES ('XE20','GSX','PKL', to_date('11/03/2017','dd/mm/yyyy'),'Suzuki' '1000' , '408000000');
+
 --Tan--
+
