@@ -125,7 +125,11 @@ INSERT INTO xe VALUES ('Xe02','Vespa Sprint S','Xe tay ga', to_date('10/10/2021'
 INSERT INTO xe VALUES ('Xe03','Wave alpha 2021','Xe so', to_date('20/06/2021','dd/mm/yyyy'),'Honda' '110' , '22000000');
 INSERT INTO xe VALUES ('Xe04','Sirius','Xe so', to_date('03/10/2021','dd/mm/yyyy'),'Yamaha' '110' , '22000000');
 INSERT INTO xe VALUES ('Xe05','Liked 50','Xe tay ga', to_date('19/05/2020','dd/mm/yyyy'),'Honda' '50' , '20000000');
-
+INSERT INTO xe VALUES ('XE06','SH Mode 150','Xe tay ga', to_date('29/11/2021','dd/mm/yyyy'),'Honda','150' , '125000000');
+INSERT INTO xe VALUES ('XE07','Air Blade ','Xe tay ga', to_date('11/10/2019','dd/mm/yyyy'),'Honda','125' , '45000000');
+INSERT INTO xe VALUES ('XE08','Exciter GP ','Xe tay côn', to_date('02/05/2020','dd/mm/yyyy'),'Yamaha' '150' , '47000000');
+INSERT INTO xe VALUES ('XE08','Exciter RC ','Xe tay côn', to_date('02/05/2020','dd/mm/yyyy'),'Yamaha' '150' , '45000000');
+INSERT INTO xe VALUES ('XE08','Exciter Camo ','Xe tay côn', to_date('02/05/2020','dd/mm/yyyy'),'Yamaha' '150' , '48000000');
 INSERT INTO xe VALUES ('XE11','SH Mode 125','Xe tay ga', to_date('29/01/2021','dd/mm/yyyy'),'Honda','125' , '55000000');
 INSERT INTO xe VALUES ('XE12','PCX','Xe tay ga', to_date('11/10/2019','dd/mm/yyyy'),'Honda','125' , '50000000');
 INSERT INTO xe VALUES ('XE13','Lead ','Xe tay ga', to_date('02/05/2019','dd/mm/yyyy'),'Honda' '125' , '40000000');
@@ -136,6 +140,8 @@ INSERT INTO xe VALUES ('XE17','FZ 150i','Xe tay côn', to_date('03/10/2020','dd/
 INSERT INTO xe VALUES ('XE18','Axelo','Xe tay côn', to_date('02/08/2018','dd/mm/yyyy'),'Suzuki' '125' , '28000000');
 INSERT INTO xe VALUES ('XE19','Galaxy SR 115','Xe số', to_date('07/11/2020','dd/mm/yyyy'),'SYM' '115' , '20000000');
 INSERT INTO xe VALUES ('XE20','GSX','PKL', to_date('11/03/2017','dd/mm/yyyy'),'Suzuki' '1000' , '408000000');
+
+
 
 --Tan--
 insert into NhanVien values('NV01','Nguyễn Thị Minh','89-91 Nguyễn Du, Phòng 21, Lầu 1, Phường Bến Nghé, Quận 1,Tp HCM','0913454310','4500000','CN01');
