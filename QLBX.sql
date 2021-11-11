@@ -133,13 +133,35 @@ INSERT INTO xe VALUES ('XE08','Exciter Camo ','Xe tay côn', to_date('02/05/2020
 INSERT INTO xe VALUES ('XE11','SH Mode 125','Xe tay ga', to_date('29/01/2021','dd/mm/yyyy'),'Honda','125' , '55000000');
 INSERT INTO xe VALUES ('XE12','PCX','Xe tay ga', to_date('11/10/2019','dd/mm/yyyy'),'Honda','125' , '50000000');
 INSERT INTO xe VALUES ('XE13','Lead ','Xe tay ga', to_date('02/05/2019','dd/mm/yyyy'),'Honda' '125' , '40000000');
-INSERT INTO xe VALUES ('XE14','946 Armani',PKL', to_date('03/11/2018','dd/mm/yyyy'),'Vespa' '155' , '40500000');
+INSERT INTO xe VALUES ('XE14','946 Armani','PKL', to_date('03/11/2018','dd/mm/yyyy'),'Vespa' '155' , '40500000');
 INSERT INTO xe VALUES ('XE15','Sirius FI','Xe số', to_date('12/06/2019','dd/mm/yyyy'),'Yamaha' '110' , '23000000');
 INSERT INTO xe VALUES ('XE16','Grande Deluxe 2016','Xe tay ga', to_date('20/01/2016','dd/mm/yyyy'),'Yamaha','125' , '40000000');
 INSERT INTO xe VALUES ('XE17','FZ 150i','Xe tay côn', to_date('03/10/2020','dd/mm/yyyy'),'Yamaha','150' , '66000000');
 INSERT INTO xe VALUES ('XE18','Axelo','Xe tay côn', to_date('02/08/2018','dd/mm/yyyy'),'Suzuki' '125' , '28000000');
 INSERT INTO xe VALUES ('XE19','Galaxy SR 115','Xe số', to_date('07/11/2020','dd/mm/yyyy'),'SYM' '115' , '20000000');
 INSERT INTO xe VALUES ('XE20','GSX','PKL', to_date('11/03/2017','dd/mm/yyyy'),'Suzuki' '1000' , '408000000');
+
+INSERT INTO xe VALUES ('XE21','Vision','Xe tay ga', to_date('10/01/2020','dd/mm/yyyy'),'Honda','125' , '35000000');
+INSERT INTO xe VALUES ('XE22','Vision Cao Cap','Xe tay ga', to_date('10/01/2020','dd/mm/yyyy'),'Honda','125' , '400000000');
+INSERT INTO xe VALUES ('XE23','Lead Cao Cap ','Xe tay ga', to_date('02/05/2019','dd/mm/yyyy'),'Honda' '125' , '45000000');
+INSERT INTO xe VALUES ('XE24','YZF-R3',Xe tay côn', to_date('03/05/2015','dd/mm/yyyy'),'Yamaha' '320' , '14000000');
+INSERT INTO xe VALUES ('XE25','MN-X','Xe tay ga', to_date('12/06/2015','dd/mm/yyyy'),'Yamaha' '150' , '80000000');
+INSERT INTO xe VALUES ('XE26','TFX','Xe tay ga', to_date('20/11/2016','dd/mm/yyyy'),'Yamaha','150' , '81000000');
+INSERT INTO xe VALUES ('XE27','NVX','Xe tay ga', to_date('03/10/2017','dd/mm/yyyy'),'Yamaha','155' , '50000000');
+INSERT INTO xe VALUES ('XE28','Raider','Xe tay côn', to_date('02/08/2017','dd/mm/yyyy'),'Suzuki' '150' , '50000000');
+INSERT INTO xe VALUES ('XE29','Raider GP','Xe tay côn', to_date('07/11/2017','dd/mm/yyyy'),'Suzuki' '150' , '55000000');
+INSERT INTO xe VALUES ('XE30','Hayabusa','PKL', to_date('11/03/2016','dd/mm/yyyy'),'Suzuki' '1340' , '600000000');
+
+INSERT INTO xe VALUES ('XE31','Gladius','PKL', to_date('29/01/2018','dd/mm/yyyy'),'Suzuki','650' , '435000000');
+INSERT INTO xe VALUES ('XE32','Beverly','Xe tay ga', to_date('11/10/2019','dd/mm/yyyy'),'Piaggio','125' , '150000000');
+INSERT INTO xe VALUES ('XE33','Zip ','Xe tay ga', to_date('02/05/2020','dd/mm/yyyy'),'Piaggio' '100' , '30000000');
+INSERT INTO xe VALUES ('XE34','PX 125','Vespa', to_date('03/08/2019','dd/mm/yyyy'),'Vespa' '125' , '12200000');
+INSERT INTO xe VALUES ('XE35','PX 125 70 năm','Vespa', to_date('03/08/2020','dd/mm/yyyy'),'Vespa' '125' , '13200000');
+INSERT INTO xe VALUES ('XE36','Grande Deluxe 2016','Xe tay ga', to_date('20/01/2016','dd/mm/yyyy'),'Yamaha','125' , '40000000');
+INSERT INTO xe VALUES ('XE37','Amigo','Xe số', to_date('03/10/2015','dd/mm/yyyy'),'SYM','50' , '16000000');
+INSERT INTO xe VALUES ('XE38','Janus','Xe tay ga', to_date('02/09/2018','dd/mm/yyyy'),'Yamaha' '125' , '30000000');
+INSERT INTO xe VALUES ('XE39','TNT 125','Xe tay côn', to_date('07/11/2017','dd/mm/yyyy'),'Beneli' '125' , '50000000');
+INSERT INTO xe VALUES ('XE40','Africa Twin','PKL', to_date('02/01/2021','dd/mm/yyyy'),'Honda' '1084' , '690000000');
 
 
 
