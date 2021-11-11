@@ -1,5 +1,3 @@
-
---CSDL quan ly ban xe---
 --drop database QLBX;
 create database QLBX;
 use QLBX;
@@ -20,8 +18,6 @@ LoaiXe varchar(20),
 ngaysx date,
 ThuongHieu varchar(50),
 GiaTien int,
-nhaxuatban varchar(20),
-lanin int
 );
 
 create table ChiNhanh(
@@ -86,7 +82,6 @@ GiaTien int,
 constraint fk_cthd_hd foreign key(MaHD)
 references HoaDon(MaHD),
 );
-<<<<<<< HEAD
 insert into khachhang values("KH01","Lê Văn Thông","01649077967","thongle@gmail.com","B3-202 An Hòa 7, Nam Long, Phường Tân Thuận Đông, Quận 7","TP HCM")
 insert into khachhang values("KH02","Trác Huệ Minh","0903851128","minhhue@gmail.com","233/17 Nguyễn Trãi, Quận 1","TP HCM")
 insert into khachhang values("KH03","Nguyễn Đức Tiến","0903814022","minhhue@gmail.com","3E/27 Phổ Quang, Phường 2, Quận Tân Bình","TP HCM")
@@ -116,4 +111,3 @@ insert into khachhang values("KH27","Lê Ngân Hà","0903575717","nganha@gmail.c
 insert into khachhang values("KH28","Huỳnh Văn Hoàng","0908356264","hoanghuynh@gmail.com","F24 Nhật Tảo, Phường 7, Quận 11,","TP HCM")
 insert into khachhang values("KH29","Trần Thị Liên Hương","0982166950","lienhuong@gmail.com","23 Nguyễn Hữu Tiến, Phường Tây Thạnh, Quận Tân Phú","TP HCM")
 insert into khachhang values("KH30","Nguyễn Thị Minh Thi","0913284310","minhthi@gmail.com","41 Trại Tóc - Ô Chợ Dừa, Đống Đa","Hà Nội")
-=======
