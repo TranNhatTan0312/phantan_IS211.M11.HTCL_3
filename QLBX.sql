@@ -1,3 +1,5 @@
+
+--CSDL quan ly ban xe---
 --drop database QLBX;
 create database QLBX;
 use QLBX;
