@@ -124,7 +124,17 @@ INSERT INTO chinhanh VALUES ('CN06','Cau Giay, Ha Noi',' 0981916244');
 INSERT INTO chinhanh VALUES ('CN07','Phuong 9, TP Ca Mau','0937393641'); 
 INSERT INTO chinhanh VALUES ('CN08','Phuong 5, TP Ca Mau',' 0845361684'); 
 INSERT INTO chinhanh VALUES ('CN09','Quan 7, TPHCM','0907152741'); 
-INSERT INTO chinhanh VALUES ('CN10','Quan 5, Ha Noi',' 0904221453'); 
+INSERT INTO chinhanh VALUES ('CN10','Quan 5, Ha Noi',' 0904221453');
+INSERT INTO chinhanh VALUES ('CN11','Quận Mê Linh, Hà Nội','0937119702'); 
+INSERT INTO chinhanh VALUES ('CN12','Quận Đông Anh, Hà Nội',' 0353735762'); 
+INSERT INTO chinhanh VALUES ('CN13','Quận 2, TPHCM','0823712145'); 
+INSERT INTO chinhanh VALUES ('CN14','Quận Ba Đình, Hà Nội',' 0886627412'); 
+INSERT INTO chinhanh VALUES ('CN15','Quận Từ Liêm, Hà Nội','0862324127'); 
+INSERT INTO chinhanh VALUES ('CN16','Quận Thanh Xuân, Hà Nội',' 0981974271'); 
+INSERT INTO chinhanh VALUES ('CN17','Quận 1, TP HCM','0380123421'); 
+INSERT INTO chinhanh VALUES ('CN18','Dĩ An, Bình Dương ',' 0855727521'); 
+INSERT INTO chinhanh VALUES ('CN19','Quận 11, TPHCM','0997801032'); 
+INSERT INTO chinhanh VALUES ('CN20','Quận Hoàng Mai, Hà Nội','0732398261');  
 
 INSERT INTO xe VALUES ('Xe01','Winner X','Xe tay con', to_date('29/01/2021','dd/mm/yyyy'),'Honda','150' , '31000000');
 INSERT INTO xe VALUES ('Xe02','Vespa Sprint S','Xe tay ga', to_date('10/10/2021','dd/mm/yyyy'),'Vespa','110' , '80000000');
