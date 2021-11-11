@@ -199,7 +199,53 @@ insert into NhanVien values('NV29','Trương Đình Hải','Nhà số 2, Ngõ 7 
 insert into NhanVien values('NV30','Vi Văn Tiến','Số 562/59/55 đường Thụy Khuê,, Phường Bưởi, Quận Tây Hồ, Hà Nội','0825892123','4200000','CN02');
 
 
+INSERT INTO KhoXe VALUES ('CN01','Xe01',0,  to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN01','Xe02',10, to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN01','Xe03',10, to_date('30/10/2021','dd/mm/yyyy'));
+INSERT INTO KhoXe VALUES ('CN01','Xe04',10, to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN01','Xe05',10, to_date('30/10/2021','dd/mm/yyyy'));
 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe01', 'Het Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe02', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe03', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe04', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe05', 'Con Hang','500000' ); 
 
+INSERT INTO KhoXe VALUES ('CN02','Xe06',10, , to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe07',5, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe08',3, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe09',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe01',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+                       
+INSERT INTO Kho_TinhTrang values ('CN02','Xe06', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe07', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe08', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe09', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe01', 'Con Hang','500000' );                      
 
+INSERT INTO KhoXe VALUES ('CN03','Xe01',1, to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN03','Xe02',0, to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN03','Xe03',10,to_date('30/10/2021','dd/mm/yyyy')); 
+                       
+INSERT INTO Kho_TinhTrang values ('CN03','Xe01', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN03','Xe02', 'Het Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN03','Xe03', 'Con Hang','500000' );                       
 
+INSERT INTO KhoXe VALUES ('CN04','Xe05',0, , to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN04','Xe02',5, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN04','Xe01',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN04','Xe07',10, , to_date('30/10/2021','dd/mm/yyyy'));
+                       
+INSERT INTO Kho_TinhTrang values ('CN04','Xe05', 'Het Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN04','Xe02', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN04','Xe01', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN04','Xe07', 'Con Hang','500000' );
+ 
+INSERT INTO KhoXe VALUES ('CN05','Xe06',10, , to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN05','Xe03',0, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN05','Xe04',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+
+INSERT INTO Kho_TinhTrang VALUES ('CN05','Xe06','Con hang', '1400000' ); 
+INSERT INTO Kho_TinhTrang values ('CN05','Xe03','Het Hang','1000000' );
+INSERT INTO Kho_TinhTrang values ('CN05','Xe04','Con Hang','500000' ); 
+ 
