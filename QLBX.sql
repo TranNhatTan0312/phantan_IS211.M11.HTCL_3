@@ -154,4 +154,15 @@ INSERT INTO xe VALUES ('XE19','Galaxy SR 115','Xe số', to_date('07/11/2020','d
 INSERT INTO xe VALUES ('XE20','GSX','PKL', to_date('11/03/2017','dd/mm/yyyy'),'Suzuki' '1000' , '408000000');
 
 --Tan--
+insert into NhanVien values('NV01','Nguyễn Thị Minh','89-91 Nguyễn Du, Phòng 21, Lầu 1, Phường Bến Nghé, Quận 1,Tp HCM','0913454310','4500000','CN11');
+insert into NhanVien values('NV02','Lê Đình Bích','35/37 Xô Viết Nghệ Tĩnh, Phường 17, Quận Bình Thạnh, TpHCM','0913663310','4500000','CN13');
+insert into NhanVien values('NV03','Nguyễn Công Mạnh','36/1 Lương Văn Can, Phường 2, Tp Vũng Tàu','0982632311','4000000','CN12');
+insert into NhanVien values('NV04','Cao Thị Linh','19 Trần Nhật Duật, Phường Tân Định, Quận 1, TpHCM','0913007629','5500000','CN16');
+insert into NhanVien values('NV05','Cao Minh Trang','433 Lạc Long Quân, Phường 5, Quận 11, TpHCM','0312253310','4500000','CN14');
+insert into NhanVien values('NV06','Ngô Thị Quỳnh Nga','193 Tổ 20A Đường Giáp Bát, Hà Nội','0378925612','4400000','CN15');
+insert into NhanVien values('NV07','Võ Văn Luân','Số 3 Tổ 47 Cụm 9, Vỏng Thị, Phường Bưởi, Tây Hồ, Hà Nội','0381312521','4700000','CN20');
+insert into NhanVien values('NV08','Doãn Hoài Phương','5+7 Nhà B, Nam Tràng, Trúc Bạch , Ba Đình, Hà Nội','09987402641','4500000','CN18');
+insert into NhanVien values('NV09','Lâm Bửu Đam','7 Công Lý, KP4, P.Bình Thọ, Q.Thủ Đức, TP.HCM','0351726989','4900000','CN17');
+insert into NhanVien values('NV10','Tống Thị Hải Thu','453/13KH Lê Văn Sỹ, Phường 12, Quận 3, TpHCM','0825892986','4200000','CN19');
+
 
