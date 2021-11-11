@@ -143,16 +143,41 @@ INSERT INTO xe VALUES ('XE20','GSX','PKL', to_date('11/03/2017','dd/mm/yyyy'),'S
 
 
 
+
 --Tan--
-insert into NhanVien values('NV01','Nguyễn Thị Minh','89-91 Nguyễn Du, Phòng 21, Lầu 1, Phường Bến Nghé, Quận 1,Tp HCM','0913454310','4500000','CN01');
-insert into NhanVien values('NV02','Lê Đình Bích','35/37 Xô Viết Nghệ Tĩnh, Phường 17, Quận Bình Thạnh, TpHCM','0913663310','4500000','CN01');
-insert into NhanVien values('NV03','Nguyễn Công Mạnh','36/1 Lương Văn Can, Phường 2, Tp Vũng Tàu','0982632311','4000000','CN03');
-insert into NhanVien values('NV04','Cao Thị Linh','19 Trần Nhật Duật, Phường Tân Định, Quận 1, TpHCM','0913007629','5500000','CN03');
-insert into NhanVien values('NV05','Cao Minh Trang','433 Lạc Long Quân, Phường 5, Quận 11, TpHCM','0312253310','4500000','CN02');
-insert into NhanVien values('NV06','Ngô Thị Quỳnh Nga','193 Tổ 20A Đường Giáp Bát, Hà Nội','0378925612','4400000','CN02');
-insert into NhanVien values('NV07','Võ Văn Luân','Số 3 Tổ 47 Cụm 9, Vỏng Thị, Phường Bưởi, Tây Hồ, Hà Nội','0381312521','4700000','CN02');
-insert into NhanVien values('NV08','Doãn Hoài Phương','5+7 Nhà B, Nam Tràng, Trúc Bạch , Ba Đình, Hà Nội','09987402641','4500000','CN05');
-insert into NhanVien values('NV09','Lâm Bửu Đam','7 Công Lý, KP4, P.Bình Thọ, Q.Thủ Đức, TP.HCM','0351726989','4900000','CN04');
-insert into NhanVien values('NV10','Tống Thị Hải Thu','453/13KH Lê Văn Sỹ, Phường 12, Quận 3, TpHCM','0825892986','4200000','CN04');
+insert into NhanVien values('NV01','Nguyễn Thị Minh','89-91 Nguyễn Du, Phòng 21, Lầu 1, Phường Bến Nghé, Quận 1,Tp HCM','0914251210','4500000','CN01');
+insert into NhanVien values('NV02','Lê Đình Bích','35/37 Xô Viết Nghệ Tĩnh, Phường 17, Quận Bình Thạnh, TpHCM','0900883310','4500000','CN01');
+insert into NhanVien values('NV03','Nguyễn Công Mạnh','36/1 Lương Văn Can, Phường 2, Tp Vũng Tàu','0982269911','4000000','CN03');
+insert into NhanVien values('NV04','Cao Thị Linh','19 Trần Nhật Duật, Phường Tân Định, Quận 1, TpHCM','0913543729','5500000','CN03');
+insert into NhanVien values('NV05','Cao Minh Trang','433 Lạc Long Quân, Phường 5, Quận 11, TpHCM','0310022310','4500000','CN03');
+insert into NhanVien values('NV06','Ngô Thị Quỳnh Nga','193 Tổ 20A Đường Giáp Bát, Hà Nội','0378933571','4400000','CN02');
+insert into NhanVien values('NV07','Võ Văn Luân','Số 3 Tổ 47 Cụm 9, Vỏng Thị, Phường Bưởi, Tây Hồ, Hà Nội','0381314572','4700000','CN02');
+insert into NhanVien values('NV08','Doãn Hoài Phương','5+7 Nhà B, Nam Tràng, Trúc Bạch , Ba Đình, Hà Nội','09986722641','4500000','CN05');
+insert into NhanVien values('NV09','Lâm Bửu Đam','7 Công Lý, KP4, P.Bình Thọ, Q.Thủ Đức, TP.HCM','0351720019','4900000','CN04');
+insert into NhanVien values('NV10','Tống Thị Hải Thu','453/13KH Lê Văn Sỹ, Phường 12, Quận 3, TpHCM','0825849986','4200000','CN04');
+insert into NhanVien values('NV11','Nguyễn Tấn Tài','8 Nguyễn Văn Cừ, Phòng 21, Lầu 2, Phường Bến Nghé, Quận 1,Tp HCM','0913454233','4500000','CN01');
+insert into NhanVien values('NV12','Lê Hồng Bích','14/18 Lầu 1, Tôn Thất Đạm, Phường Nguyễn Thái Bình, Quận 1, TPHCM','091366622','4500000','CN01');
+insert into NhanVien values('NV13','Nguyễn Công Tuyền','210 Hai Bà Trưng, Phường Tân Định, Quận 1, TpHCM','0981266611','4000000','CN03');
+insert into NhanVien values('NV14','Phạm Linh','234 Ngô Tất Tố, Phường 22, Quận Bình Thạnh, TpHCM','0913007333','5500000','CN03');
+insert into NhanVien values('NV15','Lương Minh Trang','343/32 Nguyễn Trọng Tuyển, Phường 1, Quận Tân Bình, TpHCM','0314225551','4500000','CN01');
+insert into NhanVien values('NV16','Ngân Thị Quỳnh','315 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TpHCM','0378925999','4400000','CN03');
+insert into NhanVien values('NV17','Đỗ Văn Tài','Số 5 Vỏng Thị, Phường Bưởi, Tây Hồ, Hà Nội','0381319291','4700000','CN02');
+insert into NhanVien values('NV18','Đinh Hoài Nam','Sô 8, Nam Tràng, Trúc Bạch , Ba Đình, Hà Nội','09987472721','4500000','CN05');
+insert into NhanVien values('NV19','Cao Minh Toàn','33 Ngõ 15 Phạm Ngọc Thạch, Hoàn Kiếm, Đống Đa, Hà Nội','0351721111','4900000','CN05');
+insert into NhanVien values('NV20','Trần Đức Đạt','51/5 Nguyễn Trãi, Phường 2, Quận 5, TpHCM','0825898888','4200000','CN04');
+insert into NhanVien values('NV21','Tống Kiệt','315 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TpHCM','0825890101','4200000','CN04');
+insert into NhanVien values('NV22','Nguyễn Minh Anh','Ngõ 34/4 Nguyễn Hồng, nhà số 5, Khu A Nam Thành Công, Láng Hạ, Quận Đống Đa, Hà Nội','091929310','4500000','CN02');
+insert into NhanVien values('NV23','Vũ Công Mạnh','Xã Thụy Lôi, Huyện Kim Bảng, Tỉnh Hà Nam','0982637771','4000000','CN02');
+insert into NhanVien values('NV24','Nguyễn Đức Nam','Số nhà 5C, Ngõ 153/30 Phú Đô, Tổ 2, Phường Phú Đô, Nam Từ Liêm, Hà Nội','0913007000','5500000','CN05');
+insert into NhanVien values('NV25','Lê Kiên Cường','Số 48 ngõ 291, Phố Khương Trung, Phường Khương Trung, Thanh Xuân, Hà Nội','0312232333','4500000','CN02');
+insert into NhanVien values('NV26','Tào Mạnh Vũ','193 Tổ 20A Đường Giáp Bát, Hà Nội','0901925612','4400000','CN02');
+insert into NhanVien values('NV27','Lê Xuân','Số nhà 6 ngõ 159 Pháo Đài Láng, Phường Láng Thượng, Quận Đống đa, Hà Nội','098712521','4700000','CN02');
+insert into NhanVien values('NV28','Đinh Thái','Số 54, đường Thúy Lĩnh, Phường Lĩnh Nam, Quận Hoàng Mai, Hà Nội','09987402222','4500000','CN05');
+insert into NhanVien values('NV29','Trương Đình Hải','Nhà số 2, Ngõ 7 Đường Phùng Khoang,, Phường Trung Văn, Quận Nam Từ Liêm, Hà Nội','0351752989','4900000','CN05');
+insert into NhanVien values('NV30','Vi Văn Tiến','Số 562/59/55 đường Thụy Khuê,, Phường Bưởi, Quận Tây Hồ, Hà Nội','0825892123','4200000','CN02');
+
+
+
+
 
 
