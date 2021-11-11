@@ -117,4 +117,3 @@ insert into khachhang values("KH28","Huỳnh Văn Hoàng","0908356264","hoanghuy
 insert into khachhang values("KH29","Trần Thị Liên Hương","0982166950","lienhuong@gmail.com","23 Nguyễn Hữu Tiến, Phường Tây Thạnh, Quận Tân Phú","TP HCM")
 insert into khachhang values("KH30","Nguyễn Thị Minh Thi","0913284310","minhthi@gmail.com","41 Trại Tóc - Ô Chợ Dừa, Đống Đa","Hà Nội")
 =======
->>>>>>> 0ab2e23ed95a6f72285a6a76d56cbdab119a0403
