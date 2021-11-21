@@ -31,7 +31,7 @@ sodt varchar(20)
 create table KhoXe(
 machinhanh varchar(10),
 MaXe varchar(5) ,
-soluong int,
+SoLuong int,
 ngaycapnhat date,
 constraint fk_kho_chinhanh foreign key(MaChiNhanh)
 references chinhanh(machinhanh),
@@ -78,6 +78,7 @@ references NhanVien(MaNV),
 create table CTHD(
 MaCTHD varchar(4) primary key,
 MaHD varchar(4) not null,
+MaXe varchar(5),
 SoLuong int,
 KhuyenMai int,
 GiaTien int,
