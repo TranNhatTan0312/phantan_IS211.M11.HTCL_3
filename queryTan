@@ -20,8 +20,11 @@ select *
 from KhachHang
 where ThanhPho='TP HCM'
 
-5) In ra số lượng hoá đơn đặt hàng trong tháng 10
+5) In ra số lượng hoá đơn đặt hàng trong tháng 10 năm 2021
 select count(MaHD)
 from HoaDon
-where 
- 
+where WHERE MONTH(NgayDatHang) = 10 AND YEAR(NgayDatHang) = 2021
+
+-----------------------------------------------------------------
+Phép hội
+phép giao
