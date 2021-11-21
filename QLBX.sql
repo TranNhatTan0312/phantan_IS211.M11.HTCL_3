@@ -31,7 +31,7 @@ sodt varchar(20)
 create table KhoXe(
 machinhanh varchar(10),
 MaXe varchar(5) ,
-soluong int,
+SoLuong int,
 ngaycapnhat date,
 constraint fk_kho_chinhanh foreign key(MaChiNhanh)
 references chinhanh(machinhanh),
@@ -78,6 +78,7 @@ references NhanVien(MaNV),
 create table CTHD(
 MaCTHD varchar(4) primary key,
 MaHD varchar(4) not null,
+MaXe varchar(5),
 SoLuong int,
 KhuyenMai int,
 GiaTien int,
@@ -133,13 +134,35 @@ INSERT INTO xe VALUES ('XE08','Exciter Camo ','Xe tay côn', to_date('02/05/2020
 INSERT INTO xe VALUES ('XE11','SH Mode 125','Xe tay ga', to_date('29/01/2021','dd/mm/yyyy'),'Honda','125' , '55000000');
 INSERT INTO xe VALUES ('XE12','PCX','Xe tay ga', to_date('11/10/2019','dd/mm/yyyy'),'Honda','125' , '50000000');
 INSERT INTO xe VALUES ('XE13','Lead ','Xe tay ga', to_date('02/05/2019','dd/mm/yyyy'),'Honda' '125' , '40000000');
-INSERT INTO xe VALUES ('XE14','946 Armani',PKL', to_date('03/11/2018','dd/mm/yyyy'),'Vespa' '155' , '40500000');
+INSERT INTO xe VALUES ('XE14','946 Armani','PKL', to_date('03/11/2018','dd/mm/yyyy'),'Vespa' '155' , '40500000');
 INSERT INTO xe VALUES ('XE15','Sirius FI','Xe số', to_date('12/06/2019','dd/mm/yyyy'),'Yamaha' '110' , '23000000');
 INSERT INTO xe VALUES ('XE16','Grande Deluxe 2016','Xe tay ga', to_date('20/01/2016','dd/mm/yyyy'),'Yamaha','125' , '40000000');
 INSERT INTO xe VALUES ('XE17','FZ 150i','Xe tay côn', to_date('03/10/2020','dd/mm/yyyy'),'Yamaha','150' , '66000000');
 INSERT INTO xe VALUES ('XE18','Axelo','Xe tay côn', to_date('02/08/2018','dd/mm/yyyy'),'Suzuki' '125' , '28000000');
 INSERT INTO xe VALUES ('XE19','Galaxy SR 115','Xe số', to_date('07/11/2020','dd/mm/yyyy'),'SYM' '115' , '20000000');
 INSERT INTO xe VALUES ('XE20','GSX','PKL', to_date('11/03/2017','dd/mm/yyyy'),'Suzuki' '1000' , '408000000');
+
+INSERT INTO xe VALUES ('XE21','Vision','Xe tay ga', to_date('10/01/2020','dd/mm/yyyy'),'Honda','125' , '35000000');
+INSERT INTO xe VALUES ('XE22','Vision Cao Cap','Xe tay ga', to_date('10/01/2020','dd/mm/yyyy'),'Honda','125' , '400000000');
+INSERT INTO xe VALUES ('XE23','Lead Cao Cap ','Xe tay ga', to_date('02/05/2019','dd/mm/yyyy'),'Honda' '125' , '45000000');
+INSERT INTO xe VALUES ('XE24','YZF-R3',Xe tay côn', to_date('03/05/2015','dd/mm/yyyy'),'Yamaha' '320' , '14000000');
+INSERT INTO xe VALUES ('XE25','MN-X','Xe tay ga', to_date('12/06/2015','dd/mm/yyyy'),'Yamaha' '150' , '80000000');
+INSERT INTO xe VALUES ('XE26','TFX','Xe tay ga', to_date('20/11/2016','dd/mm/yyyy'),'Yamaha','150' , '81000000');
+INSERT INTO xe VALUES ('XE27','NVX','Xe tay ga', to_date('03/10/2017','dd/mm/yyyy'),'Yamaha','155' , '50000000');
+INSERT INTO xe VALUES ('XE28','Raider','Xe tay côn', to_date('02/08/2017','dd/mm/yyyy'),'Suzuki' '150' , '50000000');
+INSERT INTO xe VALUES ('XE29','Raider GP','Xe tay côn', to_date('07/11/2017','dd/mm/yyyy'),'Suzuki' '150' , '55000000');
+INSERT INTO xe VALUES ('XE30','Hayabusa','PKL', to_date('11/03/2016','dd/mm/yyyy'),'Suzuki' '1340' , '600000000');
+
+INSERT INTO xe VALUES ('XE31','Gladius','PKL', to_date('29/01/2018','dd/mm/yyyy'),'Suzuki','650' , '435000000');
+INSERT INTO xe VALUES ('XE32','Beverly','Xe tay ga', to_date('11/10/2019','dd/mm/yyyy'),'Piaggio','125' , '150000000');
+INSERT INTO xe VALUES ('XE33','Zip ','Xe tay ga', to_date('02/05/2020','dd/mm/yyyy'),'Piaggio' '100' , '30000000');
+INSERT INTO xe VALUES ('XE34','PX 125','Vespa', to_date('03/08/2019','dd/mm/yyyy'),'Vespa' '125' , '12200000');
+INSERT INTO xe VALUES ('XE35','PX 125 70 năm','Vespa', to_date('03/08/2020','dd/mm/yyyy'),'Vespa' '125' , '13200000');
+INSERT INTO xe VALUES ('XE36','Grande Deluxe 2016','Xe tay ga', to_date('20/01/2016','dd/mm/yyyy'),'Yamaha','125' , '40000000');
+INSERT INTO xe VALUES ('XE37','Amigo','Xe số', to_date('03/10/2015','dd/mm/yyyy'),'SYM','50' , '16000000');
+INSERT INTO xe VALUES ('XE38','Janus','Xe tay ga', to_date('02/09/2018','dd/mm/yyyy'),'Yamaha' '125' , '30000000');
+INSERT INTO xe VALUES ('XE39','TNT 125','Xe tay côn', to_date('07/11/2017','dd/mm/yyyy'),'Beneli' '125' , '50000000');
+INSERT INTO xe VALUES ('XE40','Africa Twin','PKL', to_date('02/01/2021','dd/mm/yyyy'),'Honda' '1084' , '690000000');
 
 
 
@@ -177,36 +200,37 @@ insert into NhanVien values('NV29','Trương Đình Hải','Nhà số 2, Ngõ 7 
 insert into NhanVien values('NV30','Vi Văn Tiến','Số 562/59/55 đường Thụy Khuê,, Phường Bưởi, Quận Tây Hồ, Hà Nội','0825892123','4200000','CN02');
 
 
+<<<<<<< HEAD
 --Manh
 INSERT INTO Hoadon VALUES ('HD01','KH01','CN01','NV01', to_date('01/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD02','KH02','CN02','NV02', to_date('02/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD02','KH02','CN01','NV02', to_date('02/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
 INSERT INTO Hoadon VALUES ('HD03','KH03','CN03','NV03', to_date('03/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD04','KH04','CN04','NV04', to_date('04/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD05','KH05','CN01','NV05', to_date('05/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD04','KH04','CN03','NV04', to_date('04/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD05','KH05','CN03','NV05', to_date('05/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
 INSERT INTO Hoadon VALUES ('HD06','KH06','CN02','NV06', to_date('06/06/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD07','KH07','CN03','NV07', to_date('07/07/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD08','KH08','CN04','NV08', to_date('08/08/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD09','KH09','CN01','NV09', to_date('09/09/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD10','KH10','CN02','NV10', to_date('10/10/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD11','KH11','CN03','NV11', to_date('11/11/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD12','KH12','CN04','NV12', to_date('12/12/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD13','KH13','CN01','NV13', to_date('13/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD14','KH14','CN02','NV14', to_date('14/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD15','KH15','CN03','NV15', to_date('15/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD16','KH16','CN04','NV16', to_date('16/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD17','KH17','CN01','NV17', to_date('17/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD18','KH18','CN02','NV18', to_date('18/06/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD19','KH19','CN03','NV19', to_date('19/07/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD07','KH07','CN02','NV07', to_date('07/07/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD08','KH08','CN05','NV08', to_date('08/08/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD09','KH09','CN04','NV09', to_date('09/09/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD10','KH10','CN04','NV10', to_date('10/10/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD11','KH11','CN01','NV11', to_date('11/11/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD12','KH12','CN01','NV12', to_date('12/12/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD13','KH13','CN03','NV13', to_date('13/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD14','KH14','CN03','NV14', to_date('14/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD15','KH15','CN01','NV15', to_date('15/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD16','KH16','CN03','NV16', to_date('16/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD17','KH17','CN02','NV17', to_date('17/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD18','KH18','CN05','NV18', to_date('18/06/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD19','KH19','CN05','NV19', to_date('19/07/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
 INSERT INTO Hoadon VALUES ('HD20','KH20','CN04','NV20', to_date('20/08/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD21','KH21','CN01','NV21', to_date('21/09/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD21','KH21','CN04','NV21', to_date('21/09/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
 INSERT INTO Hoadon VALUES ('HD22','KH22','CN02','NV22', to_date('22/10/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD23','KH23','CN03','NV23', to_date('23/11/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD24','KH24','CN04','NV24', to_date('24/12/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD25','KH25','CN01','NV25', to_date('25/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD23','KH23','CN02','NV23', to_date('23/11/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD24','KH24','CN05','NV24', to_date('24/12/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD25','KH25','CN02','NV25', to_date('25/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
 INSERT INTO Hoadon VALUES ('HD26','KH26','CN02','NV26', to_date('26/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD27','KH27','CN03','NV27', to_date('27/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD28','KH28','CN04','NV28', to_date('28/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
-INSERT INTO Hoadon VALUES ('HD29','KH29','CN01','NV29', to_date('29/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD27','KH27','CN02','NV27', to_date('27/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD28','KH28','CN05','NV28', to_date('28/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD29','KH29','CN05','NV29', to_date('29/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
 INSERT INTO Hoadon VALUES ('HD30','KH30','CN02','NV30', to_date('30/06/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
 
 INSERT INTO CTHD VALUES ('CT01','HD01','10','5','10000000');
@@ -238,7 +262,7 @@ INSERT INTO CTHD VALUES ('CT26','HD26','12','6','40000000');
 INSERT INTO CTHD VALUES ('CT27','HD27','12','6','95000000')
 INSERT INTO CTHD VALUES ('CT28','HD28','13','7','98000000');
 INSERT INTO CTHD VALUES ('CT29','HD29','14','7','97000000');
-INSERT INTO CTHD VALUES ('CT30','HD30','15','7','21000000');s
+INSERT INTO CTHD VALUES ('CT30','HD30','15','7','21000000');
 
 
 
@@ -247,3 +271,55 @@ INSERT INTO CTHD VALUES ('CT30','HD30','15','7','21000000');s
 
 
 
+=======
+INSERT INTO KhoXe VALUES ('CN01','Xe01',0,  to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN01','Xe02',10, to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN01','Xe03',10, to_date('30/10/2021','dd/mm/yyyy'));
+INSERT INTO KhoXe VALUES ('CN01','Xe04',10, to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN01','Xe05',10, to_date('30/10/2021','dd/mm/yyyy'));
+
+INSERT INTO Kho_TinhTrang values ('CN01','Xe01', 'Het Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe02', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe03', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe04', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN01','Xe05', 'Con Hang','500000' ); 
+
+INSERT INTO KhoXe VALUES ('CN02','Xe06',10, , to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe07',5, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe08',3, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe09',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN02','Xe01',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+                       
+INSERT INTO Kho_TinhTrang values ('CN02','Xe06', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe07', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe08', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe09', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN02','Xe01', 'Con Hang','500000' );                      
+
+INSERT INTO KhoXe VALUES ('CN03','Xe01',1, to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN03','Xe02',0, to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN03','Xe03',10,to_date('30/10/2021','dd/mm/yyyy')); 
+                       
+INSERT INTO Kho_TinhTrang values ('CN03','Xe01', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN03','Xe02', 'Het Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN03','Xe03', 'Con Hang','500000' );                       
+
+INSERT INTO KhoXe VALUES ('CN04','Xe05',0, , to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN04','Xe02',5, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN04','Xe01',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN04','Xe07',10, , to_date('30/10/2021','dd/mm/yyyy'));
+                       
+INSERT INTO Kho_TinhTrang values ('CN04','Xe05', 'Het Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN04','Xe02', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN04','Xe01', 'Con Hang','500000' ); 
+INSERT INTO Kho_TinhTrang values ('CN04','Xe07', 'Con Hang','500000' );
+ 
+INSERT INTO KhoXe VALUES ('CN05','Xe06',10, , to_date('29/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN05','Xe03',0, , to_date('30/10/2021','dd/mm/yyyy')); 
+INSERT INTO KhoXe VALUES ('CN05','Xe04',10, , to_date('30/10/2021','dd/mm/yyyy')); 
+
+INSERT INTO Kho_TinhTrang VALUES ('CN05','Xe06','Con hang', '1400000' ); 
+INSERT INTO Kho_TinhTrang values ('CN05','Xe03','Het Hang','1000000' );
+INSERT INTO Kho_TinhTrang values ('CN05','Xe04','Con Hang','500000' ); 
+ 
+>>>>>>> f5f4ff6c37d92cc36da9f7cfe33010182cb52b5e
