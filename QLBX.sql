@@ -177,6 +177,72 @@ insert into NhanVien values('NV29','Trương Đình Hải','Nhà số 2, Ngõ 7 
 insert into NhanVien values('NV30','Vi Văn Tiến','Số 562/59/55 đường Thụy Khuê,, Phường Bưởi, Quận Tây Hồ, Hà Nội','0825892123','4200000','CN02');
 
 
+--Manh
+INSERT INTO Hoadon VALUES ('HD01','KH01','CN01','NV01', to_date('01/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD02','KH02','CN02','NV02', to_date('02/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD03','KH03','CN03','NV03', to_date('03/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD04','KH04','CN04','NV04', to_date('04/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD05','KH05','CN01','NV05', to_date('05/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD06','KH06','CN02','NV06', to_date('06/06/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD07','KH07','CN03','NV07', to_date('07/07/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD08','KH08','CN04','NV08', to_date('08/08/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD09','KH09','CN01','NV09', to_date('09/09/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD10','KH10','CN02','NV10', to_date('10/10/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD11','KH11','CN03','NV11', to_date('11/11/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD12','KH12','CN04','NV12', to_date('12/12/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD13','KH13','CN01','NV13', to_date('13/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD14','KH14','CN02','NV14', to_date('14/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD15','KH15','CN03','NV15', to_date('15/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD16','KH16','CN04','NV16', to_date('16/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD17','KH17','CN01','NV17', to_date('17/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD18','KH18','CN02','NV18', to_date('18/06/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD19','KH19','CN03','NV19', to_date('19/07/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD20','KH20','CN04','NV20', to_date('20/08/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD21','KH21','CN01','NV21', to_date('21/09/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD22','KH22','CN02','NV22', to_date('22/10/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD23','KH23','CN03','NV23', to_date('23/11/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD24','KH24','CN04','NV24', to_date('24/12/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD25','KH25','CN01','NV25', to_date('25/01/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD26','KH26','CN02','NV26', to_date('26/02/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD27','KH27','CN03','NV27', to_date('27/03/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD28','KH28','CN04','NV28', to_date('28/04/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD29','KH29','CN01','NV29', to_date('29/05/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+INSERT INTO Hoadon VALUES ('HD30','KH30','CN02','NV30', to_date('30/06/2021','dd/mm/yyyy'), to_date('10/01/2021','dd/mm/yyyy'),to_date('10/01/2022','dd/mm/yyyy'));
+
+INSERT INTO CTHD VALUES ('CT01','HD01','10','5','10000000');
+INSERT INTO CTHD VALUES ('CT02','HD02','5','1','20000000');
+INSERT INTO CTHD VALUES ('CT03','HD03','7','2','30000000');
+INSERT INTO CTHD VALUES ('CT04','HD04','6','2','40000000');
+INSERT INTO CTHD VALUES ('CT05','HD05','8','2','50000000');
+INSERT INTO CTHD VALUES ('CT06','HD06','1','1','60000000');
+INSERT INTO CTHD VALUES ('CT07','HD07','2','1','70000000');
+INSERT INTO CTHD VALUES ('CT08','HD08','3','2','80000000');
+INSERT INTO CTHD VALUES ('CT09','HD09','9','5','90000000');
+INSERT INTO CTHD VALUES ('CT10','HD10','4','3','11200000');
+INSERT INTO CTHD VALUES ('CT11','HD11','11','5','2100000');
+INSERT INTO CTHD VALUES ('CT12','HD12','15','10','65000000');
+INSERT INTO CTHD VALUES ('CT13','HD13','16','10','56000000');
+INSERT INTO CTHD VALUES ('CT14','HD14','20','10','75000000');
+INSERT INTO CTHD VALUES ('CT15','HD15','21','15','25000000');
+INSERT INTO CTHD VALUES ('CT16','HD16','1','1','35000000');
+INSERT INTO CTHD VALUES ('CT17','HD17','2','1','45000000');
+INSERT INTO CTHD VALUES ('CT18','HD18','3','2','67000000');
+INSERT INTO CTHD VALUES ('CT19','HD19','4','1','90000000');
+INSERT INTO CTHD VALUES ('CT20','HD20','5','5','95000000');
+INSERT INTO CTHD VALUES ('CT21','HD21','6','1','15000000');
+INSERT INTO CTHD VALUES ('CT22','HD22','8','3','20000000');
+INSERT INTO CTHD VALUES ('CT23','HD23','9','5','25000000');
+INSERT INTO CTHD VALUES ('CT24','HD24','10','5','30000000');
+INSERT INTO CTHD VALUES ('CT25','HD25','11','5','38000000');
+INSERT INTO CTHD VALUES ('CT26','HD26','12','6','40000000');
+INSERT INTO CTHD VALUES ('CT27','HD27','12','6','95000000');
+INSERT INTO CTHD VALUES ('CT28','HD28','13','7','98000000');
+INSERT INTO CTHD VALUES ('CT29','HD29','14','7','97000000');
+INSERT INTO CTHD VALUES ('CT30','HD30','15','7','21000000');
+
+
+
+
 
 
 
