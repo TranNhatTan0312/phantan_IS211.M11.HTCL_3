@@ -1,0 +1,34 @@
+---trường----
+---phép trừ
+--tìm những xe chưa từng được mua
+select maxe, tenxe from xe
+except
+select maxe from cthd;
+-- tính toán: tính tổng doanh thu của nhân viên trong tháng 7 năm 2020
+select n.manv,n.tenvnv,sum(c.giatien)
+from nhanvien n, hoadon h, cthd c
+where n.manv=c.manv and h.mahd=c.mahd and where month(h.ngaydathang=7) and year(h.ngaydathang=2020);
+--trigger: Ngày nhận hàng phải lớn hơn hoặc bằng ngày đặt hàng
+GO
+CREATE TRIGGER upd_hoadon ON HOADON
+FOR UPDATE
+AS
+BEGIN
+DECLARE @NGAYDATHANG SMALLDATETIME, @NGAYNHANHANG SMALLDATETIME,
+@MAHD varchar(4)
+SELECT @MAHD =MAHD, @NGAYDATHANG = NGAYDATHANG
+FROM INSERTED
+FROM INSERTED
+SELECT @NGAYNHANHANG=NGAYNHANHANG
+FROM HOADON
+WHERE MAHD = @MAHD
+IF(@NGAYNHANHANG < @NGAYDATHANG)
+BEGIN
+PRINT 'ERROR: LOI NGAY NHAN HANG!'
+ROLLBACK TRANSACTION
+END
+ELSE
+BEGIN
+PRINT 'Sua Thanh Cong'
+END
+END
