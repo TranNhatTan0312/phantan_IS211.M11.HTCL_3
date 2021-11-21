@@ -84,6 +84,8 @@ KhuyenMai int,
 GiaTien int,
 constraint fk_cthd_hd foreign key(MaHD)
 references HoaDon(MaHD),
+constraint fk_cthd_xe foreign key(MaXe)
+references Xe(MaXe),
 );
 insert into khachhang values(‘KH01’,’Lê Văn Thông’,’01649077967’,’thongle@gmail.com’,’B3-202 An Hòa 7, Nam Long, Phường Tân Thuận Đông, Quận 7’,’TP HCM’);
 insert into khachhang values(‘KH02’,’Trác Huệ Minh’,’0903851128’,’minhhue@gmail.com’,’233/17 Nguyễn Trãi, Quận 1’,’TP HCM’);
