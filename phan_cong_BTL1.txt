@@ -3,18 +3,15 @@ Chấm bài tập lớn 2: 25/12
 /* deadline yeu cầu 1: hết tuần này */
 
 Yêu cầu 1: Thiết kế CSDLPT trên máy ảo, Radmin
--Tạo database: Tân --xong
--insert dữ liệu: Trường, Mạnh, Tân (
-Trường : 40 Khách hàng, 40 Nhân viên, 40 Xe
-Tân: 5 chi nhánh, 30 Kho, 30 Kho tình trạng,
-Mạnh: 30 CTHD, 30 HoaDon ) --đã xong
+-Tạo database: Tân
+-insert dữ liệu: Trường, Mạnh, Tân (mỗi người 10 dòng vói mỗi bảng)
 -Truy vấn: 10 câu truy vấn nhiều dạng
 	+5 câu cơ bản: Tân
 	+ Hội, giao: Tân
-	+ Trừ: Trường-- đã xong
+	+ Trừ: Trường
 	+ Chia: Mạnh
 	+ Gom nhóm: Mạnh
-	+ Tính toán: Trường-- đã xong
+	+ Tính toán: Trường
 - Quay video: Tân, Mạnh
 - Viết báo cáo: Trường
 
@@ -31,3 +28,29 @@ Yêu cầu 3: coming soon
 
 Yêu cầu 4: coming soon
 
+1) In ra thông tin của xe có mã xe 01;
+select * 
+from Xe
+where MaXe="Xe01"
+2) In ra tất cả xe có tình trạng "Còn hàng" của chi nhánh 01
+
+select TenXe
+from Xe, Kho_TinhTrang
+where Xe.MaXe =Kho_TinhTrang.MaXe, MaChiNhanh='CN01' ,TinhTrang='Con Hang'
+
+3) In ra thông tin nhân viên làm việc ở chi nhánh 1
+select *
+from NhanVien
+Where MaChiNhanh='CN01'
+
+4) In ra khách hàng có địa chỉ ở TP HCM
+
+select *
+from KhachHang
+where ThanhPho='TP HCM'
+
+5) In ra số lượng hoá đơn đặt hàng trong tháng 10
+select count(MaHD)
+from HoaDon
+where 
+ 
