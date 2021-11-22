@@ -1,0 +1,41 @@
+1) In ra thông tin của xe có mã xe 01;
+select * 
+from Xe
+where MaXe="Xe01"
+
+2) In ra tất cả xe có tình trạng "Còn hàng" của chi nhánh 01
+
+select TenXe
+from Xe, Kho_TinhTrang
+where Xe.MaXe =Kho_TinhTrang.MaXe, MaChiNhanh='CN01' ,TinhTrang='Con Hang'
+
+3) In ra thông tin nhân viên làm việc ở chi nhánh 1
+select *
+from NhanVien
+Where MaChiNhanh='CN01'
+
+4) In ra khách hàng có địa chỉ ở TP HCM
+
+select *
+from KhachHang
+where ThanhPho='TP HCM'
+
+5) In ra số lượng hoá đơn đặt hàng trong tháng 10 năm 2021
+select count(MaHD)
+from HoaDon
+where MONTH(NgayDatHang) = 10 AND YEAR(NgayDatHang) = 2021
+
+-----------------------------------------------------------------
+Phép hội:
+
+phép giao: Tìm những xe có giá trên 20 triệu đã được bán trong tháng 10. 
+
+select MaXe
+from Xe
+where GiaTien >20000000
+intersect
+select MaXe
+from CTHD, HoaDon
+where HoaDon.MaHD= CTHD.MaHD and MONTH(NgayDatHang) = 10 and YEAR(NgayDatHang) = 2021
+
+

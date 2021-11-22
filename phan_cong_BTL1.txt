@@ -3,15 +3,15 @@ Chấm bài tập lớn 2: 25/12
 /* deadline yeu cầu 1: hết tuần này */
 
 Yêu cầu 1: Thiết kế CSDLPT trên máy ảo, Radmin
--Tạo database: Tân
--insert dữ liệu: Trường, Mạnh, Tân (mỗi người 10 dòng vói mỗi bảng)
+-Tạo database: Tân --xong
+-insert dữ liệu: Trường, Mạnh, Tân (mỗi người 10 dòng vói mỗi bảng) --xong
 -Truy vấn: 10 câu truy vấn nhiều dạng
-	+5 câu cơ bản: Tân
-	+ Hội, giao: Tân
-	+ Trừ: Trường
+	+5 câu cơ bản: Tân --xong
+	+ Hội, giao: Tân 
+	+ Trừ: Trường --xong
 	+ Chia: Mạnh
 	+ Gom nhóm: Mạnh
-	+ Tính toán: Trường
+	+ Tính toán: Trường --xong
 - Quay video: Tân, Mạnh
 - Viết báo cáo: Trường
 
