@@ -26,5 +26,16 @@ from HoaDon
 where MONTH(NgayDatHang) = 10 AND YEAR(NgayDatHang) = 2021
 
 -----------------------------------------------------------------
-Phép hội
-phép giao
+Phép hội:
+
+phép giao: Tìm những xe có giá trên 20 triệu đã được bán trong tháng 10. 
+
+select MaXe
+from Xe
+where GiaTien >20000000
+intersect
+select MaXe
+from CTHD, HoaDon
+where HoaDon.MaHD= CTHD.MaHD and MONTH(NgayDatHang) = 10 and YEAR(NgayDatHang) = 2021
+
+
