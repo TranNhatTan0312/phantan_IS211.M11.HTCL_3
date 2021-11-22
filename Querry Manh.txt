@@ -1,0 +1,12 @@
+--Manh
+--Phép chia
+--Tìm ra nhân viên bán được tất cả các xe
+select distinct NV.MaNV  
+from nhanvien NV
+where not exists 
+		(select *
+		 from 	khoxe k
+		 where  NV.MaChiNhanh = k.MaChiNhanh)
+
+--Gom nhóm
+
