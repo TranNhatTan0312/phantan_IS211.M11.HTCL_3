@@ -38,4 +38,10 @@ select MaXe
 from CTHD, HoaDon
 where HoaDon.MaHD= CTHD.MaHD and MONTH(NgayDatHang) = 10 and YEAR(NgayDatHang) = 2021
 
-
+select MaXe, TenXe, GiaTien,PhanKhoi
+from Xe
+where GiaTien <50000000
+intersect
+select MaXe, TenXe, GiaTien, PhanKhoi
+from  Xe
+where PhanKhoi ='150'
