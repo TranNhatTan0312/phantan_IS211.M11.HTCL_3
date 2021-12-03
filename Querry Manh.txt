@@ -9,4 +9,9 @@ where not exists
 		 where  NV.MaChiNhanh = k.MaChiNhanh)
 
 --Gom nhóm
+--tổng số lượng nhân viên của chi nhánh 3
+select cn.machinhanh, count(manv) AS "Tong so luong nhan vien" 
+from nhanvien nv join chinhanh cn on nv.machinhanh= cn.machinhanh
+where cn.machinhanh ='CN03'
+group by cn.machinhanh;
 
