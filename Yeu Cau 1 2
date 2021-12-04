@@ -1,0 +1,132 @@
+select * from may2.nhanvien@DBL_may2
+select * from may2.khoxe@DBL_may2
+select * from may2.xe@DBL_may2
+select * from may2.kho_tinhtrang@DBL_may2
+select * from may2.chinhanh@DBL_may2
+select * from may2.Hoadon@DBL_may2
+select * from may2.CTHD@DBL_may2
+select * from may2.khachhang@DBL_may2
+
+
+
+1) In ra thông tin của xe có mã xe 01;
+select * 
+from may2.Xe@DBL_may2
+where MaXe='XE01'
+
+2) In ra tất cả xe có tình trạng "Còn hàng" của chi nhánh 01
+
+select TenXe,MaChiNhanh, TinhTrang
+from may2.Xe@DBL_may2, may2.Kho_TinhTrang@DBL_may2
+where Xe.MaXe =Kho_TinhTrang.MaXe and MaChiNhanh='CN01' and TinhTrang='Con Hang'
+
+3) In ra thông tin nhân viên làm việc ở chi nhánh 1
+select *
+from may2.NhanVien@DBL_may2
+Where MaChiNhanh='CN01'
+
+4) In ra khách hàng có địa chỉ ở TP HCM
+
+select *
+from may2.KhachHang@DBL_may2
+where ThanhPho='TP HCM'
+
+5) In ra số lượng hoá đơn đặt hàng trong tháng 10 năm 2021
+select MaHD,count(MaHD) as "So luong"
+from may2.HoaDon@DBL_may2
+where EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =10 AND EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021
+group by MaHD
+-----------------------------------------------------------------
+--6 Phép hội: tìm các xe có trong kho chi nhánh 1 và 2
+select xe.maxe, Tenxe
+from may2.Xe@DBL_may2, may2.KhoXe@DBL_may2
+where 
+Xe.MaXe=khoxe.maxe and MaChiNhanh='CN01' 
+union
+select xe.maxe, Tenxe
+from may2.Xe@DBL_may2, may2.KhoXe@DBL_may2
+where 
+Xe.MaXe=khoxe.maxe and MaChiNhanh='CN02' 
+
+
+--7 phép giao: Tìm những xe có giá trên 20 triệu đã được bán trong tháng 10. 
+
+select xe.MaXe, TenXe, xe.giatien
+from may2.Xe@DBL_may2
+where GiaTien >20000000
+intersect
+select xe.MaXe, xe.tenxe, xe.giatien
+from may2.CTHD@DBL_may2, may2.HoaDon@DBL_may2, may2.Xe@DBL_may2
+where HoaDon.MaHD= CTHD.MaHD 
+and
+Xe.maxe=cthd.maxe and
+EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =10 and EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021
+
+--8 tim xe co gia duoi 50tr va co phan khoi la 150
+select MaXe, TenXe, GiaTien,PhanKhoi
+from may2.Xe@DBL_may2
+where GiaTien <50000000
+intersect
+select MaXe, TenXe, GiaTien, PhanKhoi
+from  may2.Xe@DBL_may2
+where PhanKhoi ='150'
+
+--9 tính tổng doanh thu của nhân viên trong tháng 7 năm 2020
+select nv.manv,nv.tennv,sum(ct.giatien)
+from may2.nhanvien@DBL_may2 nv, may2.hoadon@DBL_may2 hd, may2.cthd@DBL_may2 ct
+where nv.manv=hd.manv and hd.mahd=ct.mahd and  EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =7 and EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021
+group by nv.manv,nv.tennv ;
+--10 phep tru: tim nhung xe chua tung duoc mua
+select xe.maxe
+from may2.xe@DBL_may2
+minus
+select  x.maxe
+from may2.cthd@DBL_may2 c join xe x on x.maxe=c.maxe  ;
+--tim nhan vien ban duoc tat ca cac xe
+select distinct NV.MaNV  
+from may2.nhanvien@DBL_may2 NV
+where not exists 
+		(select *
+		 from 	khoxe k
+		 where  NV.MaChiNhanh = k.MaChiNhanh)
+--11 tổng số lượng nhân viên của chi nhánh 3
+select cn.machinhanh, count(manv) AS "Tong so luong nhan vien" 
+from may2.nhanvien@DBL_may2 nv join may2.chinhanh@DBL_may2 cn on nv.machinhanh= cn.machinhanh
+where cn.machinhanh ='CN03'
+group by cn.machinhanh;
+--------------------------------------------------------------------
+--trigger: Ngày nhận hàng phải lớn hơn hoặc bằng ngày đặt hàng
+GO
+CREATE OR REPLACE TRIGGER TRG_HD_INS
+BEFORE INSERT OR UPDATE ON CTHD
+FOR EACH ROW
+BEGIN
+IF(:NEW.SOLUONG<1) THEN
+RAISE_APPLICATION_ERROR (-20767,'SO LUONG PHAI KHAC 0');
+END IF;
+END;
+
+INSERT INTO CTHD VALUES ('CT69','HD30','XE02','0','5','31000000');
+UPDATE CTHD
+SET soluong =0
+WHERE MaHD='HD01';
+
+------Procedure 
+CREATE OR REPLACE PROCEDURE DESCR_PRICE(rs IN OUT INT)
+AS
+BEGIN
+UPDATE CTHD SET GiaTien = GiaTien - GiaTien*(KHUYENMAI/100);
+rs := 1;
+END;
+
+DECLARE
+rs INT :=0;
+BEGIN
+DESCR_PRICE(rs);
+IF rs = 1 THEN
+DBMS_OUTPUT.PUT_LINE('Success');
+ELSE
+DBMS_OUTPUT.PUT_LINE('Unsuccess');
+END IF;
+END;
+select * from cthd

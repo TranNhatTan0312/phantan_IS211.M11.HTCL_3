@@ -1,13 +1,13 @@
 1) In ra thông tin của xe có mã xe 01;
 select * 
 from Xe
-where MaXe="Xe01"
+where MaXe='XE01'
 
 2) In ra tất cả xe có tình trạng "Còn hàng" của chi nhánh 01
 
-select TenXe
+select TenXe,MaChiNhanh, TinhTrang
 from Xe, Kho_TinhTrang
-where Xe.MaXe =Kho_TinhTrang.MaXe, MaChiNhanh='CN01' ,TinhTrang='Con Hang'
+where Xe.MaXe =Kho_TinhTrang.MaXe and MaChiNhanh='CN01' and TinhTrang='Con Hang'
 
 3) In ra thông tin nhân viên làm việc ở chi nhánh 1
 select *
@@ -21,23 +21,36 @@ from KhachHang
 where ThanhPho='TP HCM'
 
 5) In ra số lượng hoá đơn đặt hàng trong tháng 10 năm 2021
-select count(MaHD)
+select MaHD,count(MaHD) as "So luong"
 from HoaDon
-where MONTH(NgayDatHang) = 10 AND YEAR(NgayDatHang) = 2021
-
+where EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =10 AND EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021
+group by MaHD
 -----------------------------------------------------------------
-Phép hội:
+Phép hội: tìm các xe có trong kho chi nhánh 1 và 2
+select xe.maxe, Tenxe
+from Xe, KhoXe
+where 
+Xe.MaXe=khoxe.maxe and MaChiNhanh='CN01' 
+union
+select xe.maxe, Tenxe
+from Xe, KhoXe
+where 
+Xe.MaXe=khoxe.maxe and MaChiNhanh='CN02' 
+
 
 phép giao: Tìm những xe có giá trên 20 triệu đã được bán trong tháng 10. 
 
-select MaXe
+select xe.MaXe, TenXe, xe.giatien
 from Xe
 where GiaTien >20000000
 intersect
-select MaXe
-from CTHD, HoaDon
-where HoaDon.MaHD= CTHD.MaHD and MONTH(NgayDatHang) = 10 and YEAR(NgayDatHang) = 2021
-
+select xe.MaXe, xe.tenxe, xe.giatien
+from CTHD, HoaDon, Xe
+where HoaDon.MaHD= CTHD.MaHD 
+and
+Xe.maxe=cthd.maxe and
+EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =10 and EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021
+--tim xe co gia duoi 50tr va co phan khoi la 150
 select MaXe, TenXe, GiaTien,PhanKhoi
 from Xe
 where GiaTien <50000000
