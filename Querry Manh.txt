@@ -8,10 +8,6 @@ where not exists
 		 from 	khoxe k
 		 where  NV.MaChiNhanh = k.MaChiNhanh)
 
-select *
-from  hoadon
-where 
-
 --Gom nhóm
 --tổng số lượng nhân viên của chi nhánh 3
 select cn.machinhanh, count(manv) AS "Tong so luong nhan vien" 
