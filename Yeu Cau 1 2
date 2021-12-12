@@ -141,3 +141,30 @@ DBMS_OUTPUT.PUT_LINE('Unsuccess');
 END IF;
 END;
 select * from cthd
+---function
+-- tim tong so luong hoa don trong thang 6/2021 ban xe Honda voi so tien > 20trieu
+
+CREATE OR REPLACE FUNCTION TotalHoaDon 
+RETURN number 
+IS 
+   tong number := 0;  
+   BEGIN 
+   SELECT count(hoadon.mahd) into tong
+   FROM Hoadon,cthd, xe
+   WHERE hoadon.mahd=cthd.mahd and 
+   cthd.maxe=xe.maxe and 
+   xe.thuonghieu='Honda' and cthd.giatien>20000000 and
+   EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =6 and 
+   EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021
+ ;
+    RETURN tong;
+END;
+
+DECLARE 
+   TX number ;  
+BEGIN 
+  
+   TX := TotalHoaDon();  
+    dbms_output.put_line('Tong so hoa don la: ' || TX);  
+    
+END;
