@@ -89,11 +89,22 @@ where not exists
 		(select *
 		 from 	khoxe k
 		 where  NV.MaChiNhanh = k.MaChiNhanh)
+		 
 --11 tổng số lượng nhân viên của chi nhánh 3
 select cn.machinhanh, count(manv) AS "Tong so luong nhan vien" 
 from may2.nhanvien@DBL_may2 nv join may2.chinhanh@DBL_may2 cn on nv.machinhanh= cn.machinhanh
 where cn.machinhanh ='CN03'
 group by cn.machinhanh;
+
+--Phep chia : tim so luong cac hoa don da mua tat ca cac xe thuong hieu Honda      
+   Select count(mahd) 
+from HOADON 
+where not exists (
+            select * from Xe 
+            where thuonghieu='Honda'  and not exists (
+                        select * from CTHD
+                        where HOADON.mahd=CTHD.mahd and CTHD.maxe=XE.maxe)
+                        )
 --------------------------------------------------------------------
 --trigger: Ngày nhận hàng phải lớn hơn hoặc bằng ngày đặt hàng
 GO
