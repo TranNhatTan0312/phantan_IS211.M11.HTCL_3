@@ -1,0 +1,42 @@
+--Chua toi uu-------------
+
+select /*+ GATHER_PLAN_STATISTICS  */ hd.makh, kh.hoten,kh.sdt, kh.email, cn.TenChiNhanh, xe.thuonghieu, ct.soluong, ct.giatien
+from khachhang kh, xe xe,chinhanh cn, hoadon hd, cthd ct
+where kh.makh=hd.makh and hd.mahd=ct.mahd and ct.maxe=xe.maxe 
+and thuonghieu='Honda' and ct.giatien>20000000
+and EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =6 and 
+EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021 and  tenchinhanh <>'Quan 3, TPHCM'
+
+
+select * from table(dbms_xplan.display_cursor(format=>'ALLSTATS LAST') );
+select * from table(dbms_xplan.display);
+
+
+
+
+
+--Toi Uu-----------
+select /*+ GATHER_PLAN_STATISTICS  */ MaKH,hoten,sdt, email, TenChiNhanh, SoLuong,GiaTien,ThuongHieu
+from( select MaKH,hoten,sdt, email, ThuongHieu,
+Soluong, giatien ,TenChiNhanh
+from (select TenChiNhanh
+from ChiNhanh where TenChiNhanh<>'Quan 3, TPHCM'),(select trai.MaKH,trai.hoten,trai.sdt, trai.email, ThuongHieu,
+Soluong, giatien
+from (select a.MaKH,a.hoten,a.sdt, a.email, b.MaHD
+from ((select MaKH,kh.hoten,kh.sdt, kh.email
+from KhachHang kh)  a inner join 
+(select MaHD,MaKH from HoaDon where 
+EXTRACT(MONTH FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =6 and 
+EXTRACT(YEAR FROM TO_DATE(NgayDatHang, 'DD-MON-RR')) =2021 )  b on a.makh=b.makh )
+)  trai inner join
+(select MaHD, d.ThuongHieu,
+Soluong, giatien
+from(select MaHD,
+Soluong, giatien, MaXe 
+from CTHD
+where giatien >2000000
+)  c inner join (select MaXe,ThuongHieu from Xe where ThuongHieu='Honda')  d on c.maxe=d.maxe
+)  phai on trai.mahd=phai.mahd
+)
+)
+
