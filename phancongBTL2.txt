@@ -1,0 +1,14 @@
+Phan cong bai tap lon 2:
+#Yeu cau 1:
+- Lich su ra doi nguon goc: Tan
+- Tao va them moi du lieu: Truong + Manh + Tan(tao database: Truong + Manh, insert: Truong, Manh, Tan)
+- Viet bao cao: Tan 
+#Yeu cau 2:
+- Ca`i couchDB: Manh, Tan, Truong
+- Lay du lieu qua 2 may: Manh, Truong
+- Viet bao cao: Truong
+#Yeu cau 3:
+- Them, xoa sua qua lai 2 may: Manh, Truong
+- Viet bao cao: Manh
+
+#PowerPoint: Tan
