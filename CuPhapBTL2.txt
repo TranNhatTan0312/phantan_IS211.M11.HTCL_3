@@ -2,11 +2,59 @@ Truong: 26.170.181.39
 Tan: 26.14.136.19
 Manh: 26.167.62.71
 
+{
+   "selector": {
+      "edu.school": {
+         "$eq": "UIT"
+      }
+   }
+}
+
+{
+  "selector": {
+    "year": {
+      "$eq": 2001
+    }
+  },
+  "sort": [
+    "year"
+  ],
+  "fields": [
+    "year"
+  ]
+}
+eq: bằng
+gt: lớn hơn
+lt: nhỏ hơn
+lte: nhỏ hơn bằng
+gte: lớn hơn bằng
+ne: khác
+in: thuộc
+nin: not in
+
+[Hôm qua 3:40 PM] Trần Nhật Tân
+    {​
+"selector": {​
+"_id": {​
+"$eq": "ae7e4451aea44c135e93877bff0052d7"
+}​
+}​,
+"fields": [
+"_id",
+"_rev",
+"name",
+"age",
+"Diachi"
+],
+"limit": 2,
+"skip": 0,
+"execution_stats": true
+}​
+
 
 couchdb: admin/admin
 http://127.0.0.1:5984/_utils/#login
 
-Xem cac cum dc ket noi
 curl http://admin:password@<setup-coordination-node>:5984/_membership
 
 Tao DB tren node:
@@ -35,4 +83,6 @@ curl -X PUT http:// admin1:admin1@26.170.181.39:5984/nhom3/01/ -d "{ \"Khoa\":\"
 
 Xoa document:
 curl -X DELETE http://admin1:admin1@26.170.181.39:5984 /nhom3/01?_rev=1-6cc560ebd7baba8f4f37134162236130
+
+
 
