@@ -6,6 +6,8 @@ Manh: 26.167.62.71
 couchdb: admin/admin
 http://127.0.0.1:5984/_utils/#login
 
+Xem cac cum dc ket noi
+curl http://admin:password@<setup-coordination-node>:5984/_membership
 
 Tao DB tren node:
 curl -X PUT http://admin1:admin1@26.170.181.39:5984/nhom3
