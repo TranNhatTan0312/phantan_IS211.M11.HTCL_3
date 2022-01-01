@@ -1,0 +1,36 @@
+Truong: 26.170.181.39
+Tan: 26.14.136.19
+Manh: 26.167.62.71
+
+
+couchdb: admin/admin
+http://127.0.0.1:5984/_utils/#login
+
+
+Tao DB tren node:
+curl -X PUT http://admin1:admin1@26.170.181.39:5984/nhom3
+
+
+Xoa DB tren node:
+curl -X DELETE http:// username:password@127.0.0.1:5984/database name
+
+Xem tat ca cac doc trong db node:
+curl -X GET http://admin1:admin1@26.170.181.39:5984/xestore/_all_docs
+
+
+Xem thong tin DB:
+curl -X GET http://username:password@127.0.0.1:5984/_all_dbs
+xem thong tin 1 DB:
+curl -X GET http://username:password@ipnode:5984/nhom3
+
+
+Tao document tren node:
+curl -X PUT http:// admin1:admin1@26.170.181.39:5984/nhom3/"01" -d "{\"Name\":\"Tan\",\"Age\":\"20\",\"Country\":\"Ca Mau\",\"SV\":\"K14\",\"TinhTrang\":\"Dang hoc\"} "
+
+
+Update document tren node:
+curl -X PUT http:// admin1:admin1@26.170.181.39:5984/nhom3/01/ -d "{ \"Khoa\":\"HTTT\", \"_rev\" : \"1-6cc560ebd7baba8f4f37134162236130\" }"
+
+Xoa document:
+curl -X DELETE http://admin1:admin1@26.170.181.39:5984 /nhom3/01?_rev=1-6cc560ebd7baba8f4f37134162236130
+
