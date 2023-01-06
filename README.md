@@ -33,6 +33,7 @@ BÀI TẬP LỚN 2. CƠ CHẾ PHÂN TÁN TRÊN HỆ QUẢN TRỊ NOSQL
 - Lịch sử ra đời nguồn gốc
 - Tạo và thêm mới dữ liệu
 - Thực hiện viết báo cáo BTL2
+- Cơ chế nhân bản trong NoSQL (điểm cộng)
 
 #Yêu cầu 2: Cài đặt trên 2 máy trở lên và thực hiện truy vấn giữa hai máy
 
